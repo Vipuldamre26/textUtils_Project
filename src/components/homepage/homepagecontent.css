@@ -1,0 +1,128 @@
+.homepage-main{
+    width: 100%;
+}
+
+.homepage-main .home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.homepage-main .home-container h1{
+    font-size: 2.2rem;
+    margin-top: 3rem;
+
+}
+
+.homepage-main .home-container .container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.homepage-main .home-container .container1 span{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.homepage-main .home-container .container1 .text1{
+    min-width: 100%;
+    height: 160px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 3px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.homepage-main .home-container .container1 .text1:focus{
+    /* box-shadow:  0 0 .75rem rgba(13,110,253,.25); */
+    box-shadow: 1px 1px 5px 1px rgb(0, 157, 255);
+    outline: none;
+    border-color:blue;
+    border: none;
+}
+
+
+.homepage-main .home-container .container1 .button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    text-align: left;
+    padding: 0.6rem 0.4rem;
+}
+
+
+.homepage-main .home-container .container1 .button button{
+    height: 2.3rem;
+    padding: 0.2rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.homepage-main .home-container .container1 .button .btn1, .btn2, .btn5{
+    background-color: #0D6EFD;
+}
+
+.homepage-main .home-container .container1 .button .btn3{
+    background-color: #DC3545;
+}
+
+.homepage-main .home-container .container1 .button .btn4{
+    background-color: #198754;
+}
+
+
+
+
+.homepage-main .home-container .container2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.homepage-main .home-container .container2 strong, p, .text2{
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin: 0.2rem;
+}
+
+
+
+.homepage-main .home-container .container2 strong{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0.2rem;
+}
+
+.homepage-main .home-container .container2 .text2{
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.155);
+    max-width: 100%;
+}
+
+
+.homepage-main .home-container .container2 .text2:focus{
+    /* box-shadow:  0 0 .75rem rgba(13,110,253,.25); */
+    box-shadow: 1px 1px 5px 1px rgb(0, 157, 255);
+    outline: none;
+    border-color:blue;
+    border: none;
+}
