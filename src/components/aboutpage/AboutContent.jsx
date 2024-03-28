@@ -8,20 +8,14 @@ const reducer = (state, action) => {
     switch(action.type){
         case 'first':
             return  { ...state, 
-                        first: state.first ? false : true, 
-                        check1: state.check1 ? false : true,
                         display1: state.display1 === 'none' ? 'block' : 'none',    
                     }
         case 'second':
             return { ...state, 
-                        second: state.second ? false : true, 
-                        check2: state.check2 ? false: true,
                         display2: state.display2 === 'none' ? 'block' : 'none',    
                     }
         case 'third':
             return { ...state, 
-                        third: state.third ? false : true, 
-                        check3: state.check3 ? false: true,  
                         display3: state.display3 === 'none' ? 'block' : 'none',    
                     }
                 }
@@ -35,17 +29,10 @@ const AboutContent = () => {
         display1: 'none',
         display2: 'none',
         display3: 'none',
-        first: false,
-        second: false,
-        third: false,
-        check1: false,
-        check2: false,
-        check3: false,
     })
 
 
     const expandPara = (e) => {
-        let container = e.target.parentElement.children[1];
         const name = e.target.parentElement.parentElement.children[1].className;
         
         dispatch({ type: name })
