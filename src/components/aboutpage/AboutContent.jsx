@@ -8,14 +8,17 @@ const reducer = (state, action) => {
     switch(action.type){
         case 'first':
             return  { ...state, 
+                        check1: !state.check1 ? true : false,
                         display1: state.display1 === 'none' ? 'block' : 'none',    
                     }
         case 'second':
             return { ...state, 
+                        check2: !state.check2 ? true : false,
                         display2: state.display2 === 'none' ? 'block' : 'none',    
                     }
         case 'third':
             return { ...state, 
+                        check3: !state.check3 ? true : false,
                         display3: state.display3 === 'none' ? 'block' : 'none',    
                     }
                 }
@@ -29,6 +32,9 @@ const AboutContent = () => {
         display1: 'none',
         display2: 'none',
         display3: 'none',
+        check1: false,
+        check2: false,
+        check3: false,
     })
 
 
