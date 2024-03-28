@@ -1,32 +1,34 @@
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 const Navbar = () => {
+
 
     let button = useRef();
     let circle = useRef();
 
 
-    useEffect(() => {
+    // useEffect(() => {
         
-        if (circle.current) {
-            circle.current.style.backgroundColor = "white";
-            console.log(circle.current.innerText);
-        }
-        if (button.current) {
-            button.current.style.backgroundColor = "black";
-        }
-    }, []);
+    //     if (circle.current) {
+    //         circle.current.style.backgroundColor = "white";
+    //         console.log(circle.current.innerText);
+    //     }
+    //     if (button.current) {
+    //         button.current.style.backgroundColor = "black";
+    //     }
+    // }, []);
 
 
-    let toggle = false;
+    // let toggle = false;
 
     const changeMode = () => {
         if (!toggle) {
             circle.current.classList.add("dark-mode");
             circle.current.style.backgroundColor = "black";
             button.current.style.backgroundColor = "white";
+
             toggle = true;
         }
         else {
@@ -58,12 +60,12 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className='nav-right'>
+            {/* <div className='nav-right'>
                 <div onClick={changeMode} ref={button} className="btn">
                     <div ref={circle} className="circle"></div>
                 </div>
                 <p>Enable dark Mode</p>
-            </div>
+            </div> */}
         </div>
     )
 }
